@@ -1,13 +1,11 @@
 pipeline {
-    agent{
-       label"centos"
-    }
-    
-    stages{
-        stage(A){
-            steps{
-                echo "Saurabh is here"
+    agent any
+
+    stages {
+        stage('A')(
+            steps {
+                echo "hi saurabh is here"
             }
-        }
-    }     
+        )
+    }
 }
