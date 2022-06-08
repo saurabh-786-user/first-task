@@ -1,13 +1,13 @@
 pipeline {
     agent {
-        label "centos"
+        label "linux1"
     }
 
     stages {
-        stage('A')(
+        stage('Hello') {
             steps {
-                echo "hi saurabh is here"
+                ls
             }
-        )
+        }
     }
 }
